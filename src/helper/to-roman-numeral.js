@@ -14,7 +14,7 @@ const numerals = {
   1000: 'M',
 }
 
-const convertToRN = (value) => {
+const toRomanNumeral = (value) => {
   if (!value || typeof value !== 'number' || value < 1) {
     return null
   }
@@ -36,4 +36,4 @@ const convertToRN = (value) => {
   return romanNumeral
 }
 
-export default convertToRN
+export default toRomanNumeral
