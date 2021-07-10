@@ -1,3 +1,5 @@
+import reverseKeys from './reverse-keys'
+
 const numerals = {
   1: 'I',
   4: 'IV',
@@ -23,7 +25,7 @@ const toRomanNumeral = (value) => {
     return numerals[value]
   }
 
-  const descDecimalValues = Object.keys(numerals).reverse()
+  const descDecimalValues = reverseKeys(numerals)
   let remainder = value
   let romanNumeral = ''
 
