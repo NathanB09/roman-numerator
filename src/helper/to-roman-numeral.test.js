@@ -1,17 +1,17 @@
 import toRomanNumeral from './to-roman-numeral'
 
 test('returns null if parameter is NaN', () => {
-  expect(toRomanNumeral('string')).toBe(null)
-  expect(toRomanNumeral('26')).toBe(null)
-  expect(toRomanNumeral('abc')).toBe(null)
+  expect(toRomanNumeral('string')).toBeNull()
+  expect(toRomanNumeral('26')).toBeNull()
+  expect(toRomanNumeral('abc')).toBeNull()
 })
 
 test('returns null if parameter is 0', () => {
-  expect(toRomanNumeral(0)).toBe(null)
+  expect(toRomanNumeral(0)).toBeNull()
 })
 
 test('returns null if parameter is a negative number', () => {
-  expect(toRomanNumeral(-1)).toBe(null)
+  expect(toRomanNumeral(-1)).toBeNull()
 })
 
 test('converts input integer to correct roman numeral', () => {
