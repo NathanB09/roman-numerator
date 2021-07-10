@@ -10,6 +10,10 @@ test('returns null if parameter is 0', () => {
   expect(convertToRN(0)).toBe(null)
 })
 
+test('returns null if parameter is a negative number', () => {
+  expect(convertToRN(-1)).toBe(null)
+})
+
 test('converts input integer to correct roman numeral', () => {
   expect(convertToRN(1)).toBe('I')
   expect(convertToRN(3)).toBe('III')

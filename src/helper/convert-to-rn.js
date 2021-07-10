@@ -15,7 +15,7 @@ const numerals = {
 }
 
 const convertToRN = (value) => {
-  if (!value || typeof value !== 'number') {
+  if (!value || typeof value !== 'number' || value < 1) {
     return null
   }
 
