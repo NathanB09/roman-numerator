@@ -1,7 +1,7 @@
 function App() {
   return (
     <div className='App'>
-      <h1>Romain Numerator</h1>
+      <h1>Roman Numerator</h1>
     </div>
   )
 }
